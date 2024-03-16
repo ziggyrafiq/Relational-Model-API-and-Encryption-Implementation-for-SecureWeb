@@ -1,0 +1,14 @@
+﻿
+input[type=button], input[type=submit], button {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px;
+    border: 0;
+    color: $btn-font-colour;
+    background: $btn-background-colour;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+}

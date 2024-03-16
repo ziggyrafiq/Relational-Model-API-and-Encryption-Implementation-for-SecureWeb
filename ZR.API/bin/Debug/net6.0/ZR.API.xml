@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZR.API</name>
+    </assembly>
+    <members>
+        <member name="T:ZR.API.DataContract.InlineResponse201">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ZR.API.DataContract.InlineResponse201.Id">
+            <summary>
+            Id of the created book.
+            </summary>
+            <value>Id of the created Object/Model.</value>
+        </member>
+        <member name="M:ZR.API.DataContract.InlineResponse201.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:ZR.API.DataContract.InlineResponse201.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:ZR.API.DataContract.InlineResponse201.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:ZR.API.DataContract.InlineResponse201.Equals(ZR.API.DataContract.InlineResponse201)">
+            <summary>
+            Returns true if InlineResponse201 instances are equal
+            </summary>
+            <param name="other">Instance of InlineResponse201 to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:ZR.API.DataContract.InlineResponse201.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:ZR.API.DataContracts.InlineResponse400">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ZR.API.DataContracts.InlineResponse400.Errors">
+            <summary>
+            Error messages
+            </summary>
+            <value>Error messages</value>
+        </member>
+        <member name="M:ZR.API.DataContracts.InlineResponse400.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:ZR.API.DataContracts.InlineResponse400.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:ZR.API.DataContracts.InlineResponse400.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:ZR.API.DataContracts.InlineResponse400.Equals(ZR.API.DataContracts.InlineResponse400)">
+            <summary>
+            Returns true if InlineResponse400 instances are equal
+            </summary>
+            <param name="other">Instance of InlineResponse400 to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:ZR.API.DataContracts.InlineResponse400.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ZR.Controllers.ZrApiController.GetAll(System.String)" -->
+    </members>
+</doc>

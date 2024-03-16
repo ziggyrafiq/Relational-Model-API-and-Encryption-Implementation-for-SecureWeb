@@ -1,0 +1,17 @@
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.csproj.AssemblyReference.cache
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.AssemblyInfoInputs.cache
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.AssemblyInfo.cs
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.csproj.CoreCompileInputs.cache
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\bin\Debug\net6.0\ZR.Resources.deps.json
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\bin\Debug\net6.0\ZR.Resources.dll
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\bin\Debug\net6.0\ZR.Resources.pdb
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\bin\Debug\net6.0\ZR.Resources.xml
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\bin\Debug\net6.0\ZR.Infrastructure.dll
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\bin\Debug\net6.0\ZR.Infrastructure.pdb
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.csproj.CopyComplete
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.dll
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\refint\ZR.Resources.dll
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.xml
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ZR.Resources.pdb
+E:\GitHub\ZR-Demo-Project-02\ZR.Resources\obj\Debug\net6.0\ref\ZR.Resources.dll

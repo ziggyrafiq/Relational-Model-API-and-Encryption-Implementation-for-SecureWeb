@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ZR Demo Project 02 UI MockUp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./wwwroot/Styles/CSS/ZR-App-Style.css" asp-append-version="true" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./wwwroot/Styles/Icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./wwwroot/Styles/Icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./wwwroot/Styles/Icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./wwwroot/Styles/Icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./wwwroot/Styles/Icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./wwwroot/Styles/Icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./wwwroot/Styles/Icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./wwwroot/Styles/Icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./wwwroot/Styles/Icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./wwwroot/Styles/Icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./wwwroot/Styles/Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./wwwroot/Styles/Icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./wwwroot/Styles/Icons/favicon-16x16.png">
+    <link rel="manifest" href="./wwwroot/Styles/Icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./wwwroot/Styles/Icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+    </header>
+    <div id="sidebar">
+        <div id="logo">
+            <img src="./wwwroot/Images/logo.png" />
+            <i class="txt">Ziggy Rafiq</i>
+        </div>
+
+
+        <a class="current" asp-area="" asp-controller="Home" asp-action="Index">
+            <i class="ico">&#9733;</i> 
+            
+            <i class="txt">Dashboard</i>
+        </a>
+
+        <a asp-area="" asp-controller="Company" asp-action="Index">
+            <i class="ico">&#9728;</i>
+            <i class="txt">Company</i>
+        </a>
+        <a asp-area="" asp-controller="Contact" asp-action="Index">
+            <i class="ico">&#9737;</i>
+            <i class="txt">Contact</i>
+        </a>
+        <a asp-area="" asp-controller="Address" asp-action="Index">
+            <i class="ico">&#9737;</i>
+            <i class="txt">Address</i>
+        </a>
+        <a asp-area="" asp-controller="Telephone" asp-action="Index">
+            <i class="ico">&#9737;</i>
+            <i class="txt">Telephone</i>
+        </a>
+        <a asp-area="" asp-controller="Setting" asp-action="Index">
+            <i class="ico">&#9737;</i>
+            <i class="txt">Setting</i>
+        </a>
+    </div>
+
+
+    <main id="app-main" role="main">
+        <!--ZR START OF CONTENT STYLE-->
+        <h3>Dashboard</h3>
+        <!---FORM UI-->
+        <form class="form">
+            <label for="txtName">Name</label>
+            <input type="text" id="txtName" />
+
+            <label for="txtMessage">Message</label>
+            <textarea id="txtMessage"></textarea>
+
+            <label for="ddlStatus">Status</label>
+            <select id="ddlStatus">
+                <option selected>--Please Select Status--</option>
+                <option>Active</option>
+                <option>In Active</option>
+            </select>
+
+            <input type="submit" value="Save" />
+        </form>
+
+        <h1></h1>
+        <table class="zebra-tbl">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Encrypt CompanyID</th>
+                    <th>Company Name</th>
+                    <th>Encrypt Company Name</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>CompanyId</td>
+                    <td>EncryptCompanyId</td>
+                    <td>CompanyName#</td>
+                    <td>EncryptCompanyName</td>
+                    <td>
+                        <a asp-action="UpdateCompany" asp-route-id="x">
+                            <button>Update</button>
+                        </a>
+                    </td>
+                    <td>
+                        <form asp-action="DeleteCompany" method="post">
+                            <input type="hidden" value="x" name="CompanyId" />
+
+                        </form>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>@item.CompanyId</td>
+                    <td>@item.EncryptCompanyId</td>
+                    <td>@item.CompanyName#</td>
+                    <td>@item.EncryptCompanyName</td>
+                    <td>
+                        <a asp-action="UpdateCompany" asp-route-id="@item.CompanyId">
+                            <button>Update</button>
+                        </a>
+                    </td>
+                    <td>
+                        <form asp-action="DeleteCompany" method="post">
+                            <input type="hidden" value="@item.CompanyId name="CompanyId" />
+
+                        </form>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <!--ZR END OF CONTENT STYLE-->
+    </main>
+    <!--  <div class="container">
+        <p>This is Ziggy Container</p>
+    </div>
+    -->
+
+
+    <script src="./wwwroot/Scripts/ZR-App-Scripts.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿
+table.zebra-tbl {
+    width: 100%;
+    border-collapse: collapse;
+
+    @include small-down {
+        width: 20%;
+    }
+}
+
+table.zebra-tbl tr:nth-child(odd) {
+    background: $tbl-row-zerba-background-colour;
+}
+
+table.zebra-tbl td {
+    padding: 10px;
+
+    @include small-down {
+        padding: 1px;
+        
+    }
+}
+
+ 

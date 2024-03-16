@@ -1,0 +1,13 @@
+﻿ul.zebra-lst, ol.zebra-lst {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.zebra-lst li, ol.zebra-lst li {
+    padding: 10px;
+}
+
+ul.zebra-lst li:nth-child(odd), ol.zebra-lst li:nth-child(odd) {
+    background: $lst-row-zerba-background-colour;
+}

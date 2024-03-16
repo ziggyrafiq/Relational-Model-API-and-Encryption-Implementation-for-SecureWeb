@@ -1,0 +1,78 @@
+﻿@*@using ZR.Resources.Dtos;
+@model System.Collections.Generic.IEnumerable<CompanyDto>*@
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h3>Settings</h3>
+<!---FORM UI-->
+    <form class="form">
+      <label for="txtName">Name</label>
+      <input type="text" id="txtName"/>
+
+      <label for="txtMessage">Message</label>
+      <textarea id="txtMessage"></textarea>
+
+      <label for="ddlStatus">Status</label>
+      <select id="ddlStatus">
+          <option selected>--Please Select Status--</option>
+        <option>Active</option>
+        <option>In Active</option>
+      </select>
+
+      <input type="submit" value="Save"/>
+    </form>
+
+    <h1></h1>
+     <table class="zebra-tbl">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Encrypt CompanyID</th>
+            <th>Company Name</th>
+            <th>Encrypt Company Name</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+
+         <tr>
+                <td>CompanyId</td>
+                <td>EncryptCompanyId</td>
+                <td>CompanyName#</td>
+                <td>EncryptCompanyName</td>
+                <td>
+                    <a asp-action="UpdateCompany" asp-route-id="x">
+                       <button>Update</button>
+                    </a>
+                </td>
+                <td>
+                    <form asp-action="DeleteCompany" method="post">
+                        <input type="hidden" value="x" name="CompanyId" />
+                 
+                    </form>
+                </td>
+            </tr>
+        @*@foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CompanyId</td>
+                <td>@item.EncryptCompanyId</td>
+                <td>@item.CompanyName#</td>
+                <td>@item.EncryptCompanyName</td>
+                <td>
+                    <a asp-action="UpdateCompany" asp-route-id="@item.CompanyId">
+                       <button>Update</button>
+                    </a>
+                </td>
+                <td>
+                    <form asp-action="DeleteCompany" method="post">
+                        <input type="hidden" value="@item.CompanyId name="CompanyId" />
+                 
+                    </form>
+                </td>
+            </tr>
+        }*@
+    </tbody>
+</table>

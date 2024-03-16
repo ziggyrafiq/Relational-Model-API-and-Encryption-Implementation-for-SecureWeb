@@ -1,0 +1,1 @@
+console.log("Ziggy Rafiq Demo Project 02 App"),alert("This is Ziggy Rafiq Demo Project 02 App");

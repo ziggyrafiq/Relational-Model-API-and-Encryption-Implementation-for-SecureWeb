@@ -1,0 +1,88 @@
+﻿@*/************************************************************************************************************
+*  COPYRIGHT BY ZIGGY RAFIQ (ZAHEER RAFIQ)
+*  LinkedIn Profile URL Address: https://www.linkedin.com/in/ziggyrafiq/
+*
+*  System   :  	ZR Demo Project 01 - Book Api
+*  Date     :  	25/09/2022
+*  Author   :  	Ziggy Rafiq (https://www.ziggyrafiq.com)
+*  Notes    :
+*  Reminder :	PLEASE DO NOT CHANGE OR REMOVE AUTHOR NAME.
+*
+************************************************************************************************************/
+*@
+
+@using ZR.Resources.Dtos;
+@model System.Collections.Generic.IEnumerable<CompanyDto>
+
+@{
+    ViewData["Title"] = "Company";
+}
+
+<h3>Company</h3>
+ 
+     
+
+  
+     <table class="zebra-tbl">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Encrypt CompanyID</th>
+            <th>Company Name</th>
+            <th>Encrypt Company Name</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+
+         <tr>
+                <td>CompanyId</td>
+                <td>Registrant Type</td>
+                <td>Company Name </td>
+                <td>Registration Number</td>
+                <td>Tranding As</td>
+                <td>Active</td>
+                <td>Soft Deleted</td>
+              
+                <td>
+                    Update
+                </td>
+                <td>
+                    Delete
+                </td>
+                <td>
+                    View Detials
+                </td>
+            </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CompanyId</td>
+                <td>@item.RegistrantType.ToString()</td>
+                <td>@item.CompanyName</td>
+                <td>@item.RegistrationNumber</td>
+                <td>@item.TrandingAs</td>
+                   <td>@item.IsActive</td>
+                <td>@item.IsSoftDeleted</td>
+                
+                <td>
+                    <a asp-action="UpdateCompany" asp-route-id="@item.CompanyId">
+                       <button>Update</button>
+                    </a>
+                </td>
+                <td>
+                    <form asp-action="DeleteCompany" method="post">
+                        <input type="hidden" value="@item.CompanyId name="CompanyId" />
+                 
+                    </form>
+                </td>
+                 <td>
+                    <a asp-action="UpdateCompany" asp-route-id="@item.CompanyId">
+                       <button>View Detials</button>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

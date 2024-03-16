@@ -1,0 +1,25 @@
+{
+  "author": "Ziggy Rafiq",
+  "description": "The Package.json file is for Gulp task runner to be used. You will need to install/reinstall the development dependencies as listed below by simply right click and select reinstall in Visual Studio 2019/2022",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-changed": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-order": "1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-typescript": "5.0.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "main": "gulpfile.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
+}

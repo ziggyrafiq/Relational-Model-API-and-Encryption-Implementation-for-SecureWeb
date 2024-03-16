@@ -1,0 +1,40 @@
+﻿.row {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.row .row {
+    margin: 0;
+}
+
+.row > * {
+    padding: 15px;
+    flex: 1;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+.one-half {
+    width: calc(100% * 1/2);
+    flex: none;
+}
+
+.two-thirds {
+    width: calc(100% * 2/3);
+    flex: none;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row > * {
+        width: 100%;
+        flex: none;
+    }
+
+    .row .row {
+        margin: 15px -15px -15px;
+    }
+}

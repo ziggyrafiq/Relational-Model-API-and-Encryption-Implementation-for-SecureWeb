@@ -1,0 +1,25 @@
+﻿.form {
+    max-width: 600px; /* optional */
+    padding: 20px;
+    border: 1px solid $frm-borders-colour;
+    background: $frm-background-colour;
+
+    @include small-down {
+        max-width: 300px; /* optional */
+        padding: 5px;
+    }
+}
+
+ 
+.form label, .form input, .form textarea, .form select, .form button {
+    display: block;
+    width: 100%;
+}
+
+.form label {
+    padding: 10px 0;
+}
+
+.form input, .form textarea, .form select {
+    padding: 10px;
+}

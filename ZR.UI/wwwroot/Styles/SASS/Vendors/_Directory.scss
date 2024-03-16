@@ -1,0 +1,14 @@
+/* ==================================================================================
+Vendors Folder
+In this folder we have all of our 3rd party plugins and 3rd party SASS(SCSS) files.
+================================================================================== */
+@import "Bourbon/Bourbon";
+@import "Neat/Neat";
+@import "Normalize";
+
+//Fontawesome-Free Version 5.15.4-web
+@import "Fontawesome/Scss/fontawesome";
+@import "Fontawesome/Scss/solid";
+@import "Fontawesome/Scss/brands";
+@import "Fontawesome/Scss/regular";
+

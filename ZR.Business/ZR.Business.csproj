@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DtoAssembler\**" />
+    <EmbeddedResource Remove="DtoAssembler\**" />
+    <None Remove="DtoAssembler\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="6.0.7" />
+    <PackageReference Include="NLog" Version="5.0.1" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZR.Infrastructure\ZR.Infrastructure.csproj" />
+    <ProjectReference Include="..\ZR.Resources\ZR.Resources.csproj" />
+  </ItemGroup>
+
+</Project>

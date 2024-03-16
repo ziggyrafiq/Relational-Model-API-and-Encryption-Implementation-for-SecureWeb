@@ -1,0 +1,83 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] IS Demo</title>
+ 
+    <link rel="stylesheet" href="~/Styles/CSS/IS-App-Style.css" asp-append-version="true" />
+
+      <link rel="apple-touch-icon" sizes="57x57" href="~/Styles/Icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="~/Styles/Icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/Styles/Icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Styles/Icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/Styles/Icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/Styles/Icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/Styles/Icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/Styles/Icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/Styles/Icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/Styles/Icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Styles/Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/Styles/Icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Styles/Icons/favicon-16x16.png">
+    <link rel="manifest" href="~/Styles/Icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/Styles/Icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="sidebar">  
+        <div id="logo">
+        <img src="/Images/logo.png"/>
+        <i class="txt">Ziggy Rafiq</i>
+      </div>
+
+    
+      <a class="current" asp-area="" asp-controller="Home" asp-action="Index">
+                  <i class="ico">&#9733;</i>
+             
+        <i class="txt">Dashboard</i>
+      </a>
+
+      <a asp-area="" asp-controller="Company" asp-action="Index">
+        <i class="ico">&#9728;</i>
+        <i class="txt">Company</i>
+      </a>
+      <a asp-area="" asp-controller="Contact" asp-action="Index">
+        <i class="ico">&#9737;</i>
+        <i class="txt">Contact</i>
+      </a>
+     <a asp-area="" asp-controller="Address" asp-action="Index">
+        <i class="ico">&#9737;</i>
+        <i class="txt">Address</i>
+      </a>
+          <a asp-area="" asp-controller="Telephone" asp-action="Index">
+        <i class="ico">&#9737;</i>
+        <i class="txt">Telephone</i>
+      </a>
+          <a asp-area="" asp-controller="Setting" asp-action="Index">
+        <i class="ico">&#9737;</i>
+        <i class="txt">Setting</i>
+      </a>
+    </div>
+   
+
+    <main id="app-main" role="main">
+          @RenderBody()
+         
+        </main>
+  @*  <div class="container">
+        <p>This is Ziggy Container</p>
+    </div>
+ *@
+ 
+  
+    <script src="~/Scripts/IS-App-Scripts.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
