@@ -1,4 +1,4 @@
-# Relational-Model-API-and-Encryption-Implementation-for-SecureWeb
+# Relational Model API and Encryption Implementation for SecureWeb
 
 | Author      | Ziggy Rafiq (<https://ziggyrafiq.com> ) |
 | ----------- | --------------------------------------- |
@@ -45,7 +45,7 @@ The project includes both the applications and the DPAPI-NG example to provide a
 
 The project source code can be found on my GitHub account, which is listed below. Please click on the link to access my GitHub account repository.
 
-**https://github.com/ziggyrafiq/ZR-Demo-Project-02**
+**https://github.com/ziggyrafiq/Relational-Model-API-and-Encryption-Implementation-for-SecureWeb**
 
 ## Author
 ### Ziggy Rafiq
